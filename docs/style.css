@@ -18,3 +18,10 @@ body {
 h1 {
 	color: #fff;
 }
+
+.content {
+	background-color: #fff;
+	height: 30px;
+	text-align: center;
+	color: #000;
+}
