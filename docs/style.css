@@ -1,25 +1,13 @@
 body {
 	background-color: #232323;
 	margin: 0;
+	padding: 0;
 	font-family: "Montserrat", "Avenir";
+	font-size: 14px;
 }
 
-.square {
-	width: 30%;
-	background-color: purple;
-	padding-bottom: 30%;
-	float: left;
-	margin: 1.66%;
-	border-radius: 15%;
-	transition: background-color .6s;
-	-webkit-transition: background-color .6s;
-	-moz-transition: background-color .6s;
-
-}
-
-.container {
-	margin: 20px auto;
-	width: 600px;
+.main {
+	width: 100%;
 }
 
 h1 {
@@ -34,24 +22,41 @@ h1 {
 }
 
 #colorDisplay {
-	font-size: 200%;
-}
-
-#message {
-	display: inline-block;
-	width: 20%;
+	font-size: 2rem;
 }
 
 .content {
+	text-align: center;
 	background-color: #fff;
 	height: 30px;
-	text-align: center;
 	color: #000;
+}
+
+#message {
+	line-height: 30px;
 }
 
 .selected {
 	background-color: steelblue;
 	color: #fff;
+}
+
+.reset {
+	float: left;
+}
+.reset:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mode {
+	float: right;
+}
+.mode:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 button {
@@ -72,4 +77,54 @@ button {
 button:hover {
 	background-color: steelblue;
 	color: #fff;
+}
+.container {
+	width: 100%;
+	margin: 5px 40px;;
+}
+
+.square {
+	width: 35%;
+	background-color: purple;
+	padding-bottom: 35%;
+	float: left;
+	margin: 10px;
+	border-radius: 15%;
+	transition: background-color .6s;
+	-webkit-transition: background-color .6s;
+	-moz-transition: background-color .6s;
+}
+
+@media (min-width: 780px) {
+	body {
+		font-size: 20px;
+	}
+
+	#colorDisplay {
+		font-size: 4rem;
+	}
+
+	.mode {
+		float: none;
+	}
+	.reset {
+		float: none;
+	}
+
+	#message {
+		display: inline-block;
+		width: 20%;
+	}
+
+	.container {
+		width: 600px;
+		margin: 20px auto;
+	}
+	
+	.square {
+		width: 30%;
+		padding-bottom: 30%;
+		margin: 1.66%;
+	}
+
 }

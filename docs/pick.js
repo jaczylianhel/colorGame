@@ -25,7 +25,7 @@ function modeSetupButton() {
 			mode[0].classList.remove("selected");
 			mode[1].classList.remove("selected");
 			this.classList.add("selected");
-			this.textContent === 'Easy' ? numSquares = 3 : numSquares = 6;
+			this.textContent === 'Easy' ? numSquares = 4 : numSquares = 6;
 			resetMode()
 		});
 	};
