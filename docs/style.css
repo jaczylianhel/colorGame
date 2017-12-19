@@ -61,7 +61,8 @@ h1 {
 
 button {
 	border: none;
-	background-color: none;
+	padding-top: 2px;
+	background-color: transparent;
 	text-transform: uppercase;
 	height: 100%;
 	font-weight: 700;
@@ -106,6 +107,7 @@ button:hover {
 
 	.mode {
 		float: none;
+
 	}
 	.reset {
 		float: none;
